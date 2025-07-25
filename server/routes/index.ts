@@ -1,3 +1,5 @@
+let config = useRuntimeConfig();
+console.log(config);
 export default defineEventHandler((event) => {
-  return "Start by editing <code>server/routes/index.ts</code>.";
+  return { data: "Hello World", config: config };
 });
