@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = ["nodejs_22","python3", "gcc", "gnumake"]
+
+[phases.install]
+cmds = ["npm install"]
+
+[phases.build]
+cmds = ["node -v","npm -v","npm run build"]
+
+[start]
+cmd = "node .output/server/index.mjs"
+
+[variables]
+NODE_VERSION = "22"
+NODE_ENV = "production"
