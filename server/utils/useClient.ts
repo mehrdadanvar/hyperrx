@@ -24,6 +24,6 @@ async function connectToMongo(connection_string: string) {
 }
 
 export async function useDrugCollection() {
-  let client = await connectToMongo(config.ConnectionString);
+  let client = await connectToMongo(config.mongoString);
   return client;
 }

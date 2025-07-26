@@ -3,6 +3,6 @@ export default defineNitroConfig({
   compatibilityDate: "2025-07-25",
   srcDir: "server",
   runtimeConfig: {
-    ConnectionString: process.env.COOLIFY_CONNECTION_STRING,
+    mongoString: process.env.MONGO_URI,
   },
 });
