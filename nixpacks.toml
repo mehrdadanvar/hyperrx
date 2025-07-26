@@ -7,10 +7,6 @@ cmds = ["bun install"]
 [phases.build]
 cmds = ["bun run build"]
 
-[phases.start]
-cmd = "bun .output/server/index.mjs"
-env = { "PORT" = "4000" }
-
 [start]
 cmd = "bun .output/server/index.mjs"
 env = { "PORT" = "4000" }
